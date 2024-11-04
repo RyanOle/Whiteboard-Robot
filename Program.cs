@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class TextPathing {
     private static double x = 500;
@@ -12,7 +12,7 @@ class TextPathing {
     
     static void Main(string[] args) {
         new TextPathing();
-        text("z");
+        text("abcdefghijklmnopqrstuvwxyz");
     }
 
     public static void text(string word) {        
@@ -101,77 +101,499 @@ class TextPathing {
                 printNumbers();
                 break;
             case 'C':
-                Console.WriteLine("You entered C.");
+                //Move to first contact point
+                x += width;
+                y -= height/3;
+                printNumbers();
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x -= width/3;
+                y += height/3;
+                printNumbers();
+                x -= width/3;
+                printNumbers();
+                x -= width/3;
+                y -= height/3;
+                printNumbers();
+                y -= height/3;
+                printNumbers();
+                x += width/3;
+                y-= height/3;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y += height/3;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                y += (height/3)*2;
+                printNumbers();
                 break;
             case 'D':
-                Console.WriteLine("You entered D.");
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x += width * (0.75);
+                printNumbers();
+                x += width/4;
+                y -= height/3;
+                printNumbers();
+                y -= height/3;
+                printNumbers();
+                x -= width/4;
+                y -= height/3;
+                printNumbers();
+                x -= width * (0.75);
+                printNumbers();
+                y += height;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += width + spacing;
+                printNumbers();
                 break;
             case 'E':
-                Console.WriteLine("You entered E.");
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x += width;
+                printNumbers();
+                x -= width;
+                printNumbers();
+                y -= height/2;
+                printNumbers();
+                x += width;
+                printNumbers();
+                x -= width;
+                printNumbers();
+                y -= height/2;
+                printNumbers();
+                x += width;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                y += height;
+                printNumbers();
                 break;
             case 'F':
-                Console.WriteLine("You entered F.");
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x += width;
+                printNumbers();
+                x -= width;
+                printNumbers();
+                y -= height/2;
+                printNumbers();
+                x += width;
+                printNumbers();
+                x -= width;
+                printNumbers();
+                y -= height/2;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += width + spacing;
+                y += height;
+                printNumbers();
                 break;
             case 'G':
-                Console.WriteLine("You entered G.");
+                //Move to first contact point
+                x += width;
+                y -= height/3;
+                printNumbers();
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x -= width/3;
+                y += height/3;
+                printNumbers();
+                x -= width/3;
+                printNumbers();
+                x -= width/3;
+                y -= height/3;
+                printNumbers();
+                y -= height/3;
+                printNumbers();
+                x += width/3;
+                y-= height/3;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y += height/3;
+                printNumbers();
+                x -= width/2;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += (width/2) + spacing;
+                y += (height/3) * 2;
+                printNumbers();
                 break;
             case 'H':
-                Console.WriteLine("You entered H.");
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                y -= height;
+                printNumbers();
+                y += height/2;
+                printNumbers();
+                x += width;
+                printNumbers();
+                y -= height/2;
+                printNumbers();
+                y += height;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                printNumbers();
                 break;
             case 'I':
-                Console.WriteLine("You entered I.");
-                break;
-            case 'J':
-                Console.WriteLine("You entered J.");
-                break;
-            case 'K':
-                Console.WriteLine("You entered K.");
-                break;
-            case 'L':
-                Console.WriteLine("You entered L.");
-                break;
-            case 'M':
-                Console.WriteLine("You entered M.");
-                break;
-            case 'N':
-                Console.WriteLine("You entered N.");
-                break;
-            case 'O':
-                Console.WriteLine("You entered O.");
-                break;
-            case 'P':
-                Console.WriteLine("You entered P.");
-                break;
-            case 'Q':
-                Console.WriteLine("You entered Q.");
-                break;
-            case 'R':
-                Console.WriteLine("You entered R.");
-                break;
-            case 'S':
-                Console.WriteLine("You entered S.");
-                break;
-            case 'T':
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
                 x += width;
                 printNumbers();
                 x -= width/2;
                 printNumbers();
                 y -= height;
                 printNumbers();
+                x -= width/2;
+                printNumbers();
+                x += width;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                y += height;
+                printNumbers();
+                break;
+            case 'J':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
+                break;
+            case 'K':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
+                break;
+            case 'L':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
+                break;
+            case 'M':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
+                break;
+            case 'N':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
+                break;
+            case 'O':
+                //Move to first contact point
+                x += width;
+                y -= height/3;
+                printNumbers();
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x -= width/3;
+                y += height/3;
+                printNumbers();
+                x -= width/3;
+                printNumbers();
+                x -= width/3;
+                y -= height/3;
+                printNumbers();
+                y -= height/3;
+                printNumbers();
+                x += width/3;
+                y-= height/3;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y += height/3;
+                printNumbers();
+                y += height/3;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                y += height/3;
+                printNumbers();
+                break;
+            case 'P':
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                y -= height; 
+                printNumbers();
+                y += height;
+                printNumbers();
+                x += width * (0.75);
+                printNumbers();
+                x += width/4;
+                y -= height/4;
+                printNumbers();
+                x -= width/4;
+                y -= height/4;
+                printNumbers();
+                x -= width * (0.75);
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += width + spacing;
+                y += height/2;
+                printNumbers();
+                break;
+            case 'Q':
+                //Move to first contact point
+                x += width;
+                y -= height/3;
+                printNumbers();
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x -= width/3;
+                y += height/3;
+                printNumbers();
+                x -= width/3;
+                printNumbers();
+                x -= width/3;
+                y -= height/3;
+                printNumbers();
+                y -= height/3;
+                printNumbers();
+                x += width/3;
+                y-= height/3;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y += height/3;
+                printNumbers();
+                y += height/3;
+                printNumbers();
+                z -= backUp;
+                printNumbers();
+                x -= width/3;
+                y -= height/3;
+                printNumbers();
+                z += backUp;
+                printNumbers();
+                x += width/3;
+                y -= height/3;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                y += height;
+                printNumbers();
+                break;
+            case 'R':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
+                break;
+            case 'S':
+                //Move to first contact point
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
+                break;
+            case 'T':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
                 break;
             case 'U':
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
                 break;
             case 'V':
-                Console.WriteLine("You entered V.");
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x += width/2;
+                y -= height;
+                printNumbers();
+                x += width/2;
+                y += height;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                printNumbers();
                 break;
             case 'W':
-                Console.WriteLine("You entered W.");
+                //At first point of contact
+                //Marker touch
+
+                //Draw
+                //Drawing Done
+
+                //Move to next initial position
                 break;
             case 'X':
-                Console.WriteLine("You entered X.");
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x += width;
+                y -= height;
+                printNumbers();
+                z -= backUp;
+                printNumbers();
+                x -= width;
+                printNumbers();
+                z += backUp;
+                printNumbers();
+                x += width;
+                y += height;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                printNumbers();
                 break;
             case 'Y':
-                Console.WriteLine("You entered Y.");
+                //At first point of contact
+                //Marker touch
+                z += backUp;
+                printNumbers();
+
+                //Draw
+                x += width/2;
+                y -= height/3;
+                printNumbers();
+                y -= (height/3) * 2;
+                printNumbers();
+                y += (height/3) * 2;
+                printNumbers();
+                x += width/2;
+                y += height/3;
+                printNumbers();
+                //Drawing Done
+
+                //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += spacing;
+                printNumbers();
                 break;
             case 'Z':
                 //At initial position
@@ -205,6 +627,7 @@ class TextPathing {
     }
 
     public static void printNumbers() {
+        //This will end up outputing to a text file or directly to the Ufactory software instead of console output
         //FIX ME, right now x, y, and z are on their assumed standard planes
         //If y is ends up being back and forward and z up and down simply switch z and y in the below format replacement
         Console.WriteLine(string.Format("G1 X={0} Y={1} Z={2} F3000", x, y, z));
