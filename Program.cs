@@ -59,9 +59,8 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += (width * (0.75)) + spacing;
+                x += width * (0.75);
                 y += height/2;
-                printNumbers();
                 break;
             case 'B':
                 //At first point of contact
@@ -97,8 +96,7 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += width + spacing;
-                printNumbers();
+                x += width;
                 break;
             case 'C':
                 //Move to first contact point
@@ -133,9 +131,7 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
                 y += (height/3)*2;
-                printNumbers();
                 break;
             case 'D':
                 //At first point of contact
@@ -163,8 +159,7 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += width + spacing;
-                printNumbers();
+                x += width;
                 break;
             case 'E':
                 //At first point of contact
@@ -192,9 +187,7 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
                 y += height;
-                printNumbers();
                 break;
             case 'F':
                 //At first point of contact
@@ -220,9 +213,8 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += width + spacing;
+                x += width;
                 y += height;
-                printNumbers();
                 break;
             case 'G':
                 //Move to first contact point
@@ -259,9 +251,8 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += (width/2) + spacing;
+                x += (width/2);
                 y += (height/3) * 2;
-                printNumbers();
                 break;
             case 'H':
                 //At first point of contact
@@ -284,8 +275,6 @@ class TextPathing {
 
                 //Move to next initial position
                 z -= backUp;
-                printNumbers();
-                x += spacing;
                 printNumbers();
                 break;
             case 'I':
@@ -310,54 +299,124 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
                 y += height;
-                printNumbers();
                 break;
             case 'J':
-                //At first point of contact
+                //Move to first contact point
+                y -= (height/3) * 2;
+                printNumbers();
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                x += width/3;
+                y -= height/3;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y += height/3;
+                printNumbers();
+                y += (height/3)*2;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
                 break;
             case 'K':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= height;
+                printNumbers();
+                y += height/2;
+                printNumbers();
+                x += width;
+                y -= height/2;
+                printNumbers();
+                x -= width;
+                y += height/2;
+                printNumbers();
+                x += width;
+                y += height/2;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
                 break;
             case 'L':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= height;
+                printNumbers();
+                x += width;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                y += height;
                 break;
             case 'M':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= height;
+                printNumbers();
+                y += height;
+                printNumbers();
+                x += width/2;
+                y -= height/2;
+                printNumbers();
+                x += width/2;
+                y += height/2;
+                printNumbers();
+                y -= height;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                y += height;
                 break;
             case 'N':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= height;
+                printNumbers();
+                y += height;
+                printNumbers();
+                x += width;
+                y -= height;
+                printNumbers();
+                y += height;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
                 break;
             case 'O':
                 //Move to first contact point
@@ -394,9 +453,7 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
                 y += height/3;
-                printNumbers();
                 break;
             case 'P':
                 //At first point of contact
@@ -424,9 +481,8 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += width + spacing;
+                x += width;
                 y += height/2;
-                printNumbers();
                 break;
             case 'Q':
                 //Move to first contact point
@@ -473,45 +529,129 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
                 y += height;
-                printNumbers();
                 break;
             case 'R':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= height; 
+                printNumbers();
+                y += height;
+                printNumbers();
+                x += width * (0.75);
+                printNumbers();
+                x += width/4;
+                y -= height/4;
+                printNumbers();
+                x -= width/4;
+                y -= height/4;
+                printNumbers();
+                x -= width * (0.75);
+                printNumbers();
+                x += width;
+                y -= height/2;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                y += height;
+                printNumbers();
                 break;
             case 'S':
                 //Move to first contact point
+                y -= (height/6) * 5;
+                printNumbers();
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= height/6;
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y += height/6;
+                printNumbers();
+                y += height/6;
+                printNumbers();
+                x -= width/3;
+                y += height/6;
+                printNumbers();
+                x -= width/3;
+                printNumbers();
+                x -= width/3;
+                y += height/6;
+                printNumbers();
+                y += height/6;
+                printNumbers();
+                x += width/3;
+                y += height/6;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y -= height/6;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                y += height/6;
                 break;
             case 'T':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                x += width;
+                printNumbers();
+                x -= width/2;
+                printNumbers();
+                y -= height;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
+                x += width/2;
+                y += height;
                 break;
             case 'U':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= (height/3)*2;
+                printNumbers();
+                x += width/3;
+                y -= height/3;
+                printNumbers();
+                x += width/3;
+                printNumbers();
+                x += width/3;
+                y += height/3;
+                printNumbers();
+                y += (height/3)*2;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
+                printNumbers();
                 break;
             case 'V':
                 //At first point of contact
@@ -531,17 +671,28 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
-                printNumbers();
                 break;
             case 'W':
                 //At first point of contact
                 //Marker touch
+                z += backUp;
+                printNumbers();
 
                 //Draw
+                y -= height;
+                printNumbers();
+                x += width/2;
+                y += height/2;
+                printNumbers();
+                x += width/2;
+                y -= height/2;
+                printNumbers();
+                y += height;
+                printNumbers();
                 //Drawing Done
 
                 //Move to next initial position
+                z -= backUp;
                 break;
             case 'X':
                 //At first point of contact
@@ -567,8 +718,6 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
-                printNumbers();
                 break;
             case 'Y':
                 //At first point of contact
@@ -592,8 +741,6 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
-                printNumbers();
                 break;
             case 'Z':
                 //At initial position
@@ -614,15 +761,14 @@ class TextPathing {
                 //Move to next initial position
                 z -= backUp;
                 printNumbers();
-                x += spacing;
                 y += height;
-                printNumbers();
                 break;
             default:
                 Console.WriteLine("Unrecognized letter was entered!!!");
                 break;
         }
-
+        x += spacing;
+        printNumbers();
         Console.WriteLine("");
     }
 
