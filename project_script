@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ACCESS_TOKEN="EAAYzi6wB698BOZCkQqYfZCXZA5ebrSNima0oBrZAvqgM6LlsiJiILjA8jQb7sojYdw2BHYSpTZCTr0tRh2bjONgQjxajEoce7W4BTIOam4F6BxyrJZAyrNeK1vWC1MfvNpYQWVsoElYrCGQmRC5exbUU50XjGNcC8Y58DqViWT3ZBjnBkU9UTSz4vuuUMBlOy3mfVXoHjLx1QI6iGT7xP9l2240UVkcM5DJjFQAVPSKzQ0ZALnxWbdfjKN5cygxNlwZDZD"
+posts=$(curl -X GET "https://graph.facebook.com/v17.0/me/posts?access_token=${ACCESS_TOKEN}")
+output=$(echo $posts | jq -r '.data[].message' | head -n 1)
+echo $output > post.txt
