@@ -1,10 +1,10 @@
 using System;
 
 class TextPathing {
-    private static double x = 500;
-    private static double y = 500;
-    private static double z = 495;
-    private static double width = 30;
+    private static double x = 0;
+    private static double y = 550;
+    private static double z = 300;
+    private static double width = 20;
     private static double height = 50;
     private static double spacing = 5;
     private static double backUp = 5;
@@ -12,7 +12,7 @@ class TextPathing {
     
     static void Main(string[] args) {
         new TextPathing();
-        text("abcdefghijklmnopqrstuvwxyz");
+        text("q");
     }
 
     public static void text(string word) {        
@@ -776,6 +776,6 @@ class TextPathing {
         //This will end up outputing to a text file or directly to the Ufactory software instead of console output
         //FIX ME, right now x, y, and z are on their assumed standard planes
         //If y is ends up being back and forward and z up and down simply switch z and y in the below format replacement
-        Console.WriteLine(string.Format("G1 X={0} Y={1} Z={2} F3000", x, y, z));
+        Console.WriteLine(string.Format("G1 X{0} Y{1} Z{2} F3000", x, z, y));
     }
 }
