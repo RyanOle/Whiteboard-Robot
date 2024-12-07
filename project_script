@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ACCESS_TOKEN="EAAYzi6wB698BOZCkQqYfZCXZA5ebrSNima0oBrZAvqgM6LlsiJiILjA8jQb7sojYdw2BHYSpTZCTr0tRh2bjONgQjxajEoce7W4BTIOam4F6BxyrJZAyrNeK1vWC1MfvNpYQWVsoElYrCGQmRC5exbUU50XjGNcC8Y58DqViWT3ZBjnBkU9UTSz4vuuUMBlOy3mfVXoHjLx1QI6iGT7xP9l2240UVkcM5DJjFQAVPSKzQ0ZALnxWbdfjKN5cygxNlwZDZD"
-posts=$(curl GET "https://graph.facebook.com/v17.0/me/posts?access_token=${ACCESS_TOKEN}")
+ACCESS_TOKEN="EAAYzi6wB698BO7ZAT2sxiu89K65uqR9egm5WVlz68Wwkq03SXQMyfkZBAxgC5yQWR1lSICm4ZBNFYchfmZA5ZBqchqyIEqQLlihgpbNgCodv2zC4Qma5qoDH8ZCgE0nwqXRfAT5hGfpwnb4PwtlReNQvHH6wp1xO9ifbpX2OKUp2AMUSwcV1ynX5MgnrpEc9EQMm9iia8JWqHDRxchnEnDGZCNvT8fm8nzbyIUNzfu35vZAmdnZB3gpJdP245i78KYlgZD"
+posts=$(curl "https://graph.facebook.com/v17.0/me/posts?access_token=${ACCESS_TOKEN}")
 output=$(echo $posts | jq -r '.data[].message' | head -n 1)
 echo $output > post.txt
