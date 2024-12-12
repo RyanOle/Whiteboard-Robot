@@ -773,9 +773,6 @@ class TextPathing {
     }
 
     public static void printNumbers() {
-        //This will end up outputing to a text file or directly to the Ufactory software instead of console output
-        //FIX ME, right now x, y, and z are on their assumed standard planes
-        //If y is ends up being back and forward and z up and down simply switch z and y in the below format replacement
         Console.WriteLine(string.Format("G1 X{0} Y{1} Z{2} F3000", x, z, y));
     }
 }
